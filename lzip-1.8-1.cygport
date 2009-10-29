@@ -1,0 +1,9 @@
+DESCRIPTION="File compressor based on LZMA algorithm"
+HOMEPAGE="http://www.nongnu.org/lzip/lzip.html"
+SRC_URI="mirror://savannah/lzip/${P}.tar.gz"
+
+src_compile() {
+	cd ${B}
+	cygconf
+	cygmake
+}
